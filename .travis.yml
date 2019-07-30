@@ -13,12 +13,13 @@ after_deploy:
 
 deploy:
   provider: elasticbeanstalk
-  access_key_id: $ACCESSKEYID
+  access_key_id:
+    secure: "eSPsmPT+R8ltVLdojLdz+BfrFA0xi6UCyPtLUi+npgygbCouOAmFJXydc0hCXZH3WRrqrBf0/dtXZKTSDoh4JvRqQ5PfjflM+1bIqWZ5psPOiMcj++E16i/B2pRr4FgvGXMMXnEyq3S4NWnnhwVGYdvmYpwWcODca4z//vMPinfdZ1A3UWT/Z5rF08nCKZ9GXfsXkYM65iyDactn94hzci22L0TRoiQBX9rwJrgUxlRFsz+0c7cxfMezp2mN19JziAPT7lU+UnhvXj8/wa2oo+5z7Ytf40n/QjQv4p4+cZ1TNp05yaTWFA5UVY7+/rKypOYCVBNRNrjMLrnhoUKOYcncwnsbdglS8FOlo109PqkNMciuwRdaYacOHQM/uPrfFTXhILQ0RTzPE5P9sLWx22FrNQQifwt3MskHTtW1II85RySunZT4cdYByJgMO3kvG6hw3NZLJCZyo8lT4+ueCmOYfyonrTVzFPIgvEs47usUycWovQ3fpDB0le3mNX0ZN9vCUpkRcmFZQ2cJJDrn3oZgZwBRDnStSzpfnpzLklzp3zZeNkdUhZ+aQopdFnNFFG+RDiQlw6Ntg1JlxgUIOluuTw3Z2qnYA5B3+mpD/iGXJjSclBC+4lg6xwIxn3NKpw51wZPjbkPFMpdXuxDY4YEmTG4Jz9WHZST/E9lgz8Q="
   secret_access_key:
-    secure: "$SECRETACCESSKEY"
+    secure: "TrXYmVYXU8GvX/oAewpPn3LswADRZdyqs7A8xTfBoOoDd8eAiiIL8Avh/oS0KO0GnJ+cCdccMpli2dOjYEc5aaZ5bbZsX0O9BbumG9/XxRHw/pq4HVn3pzuI2G4J7J2X3+XETtXhV3PYD902S3UAeFCE5yv34ywStnedjte9ufsx4q3ye5dOjre8js3ov71MMikWF/wS1JZ0+MYk2mc7Sy0u9iUGXMeJhhWlYIK0Yt3qCxWhhqZbgqzMDsIoG5xbFJliOsKEoEFYAvl2e0WKO6RD2FhVt7fmuQmQ0ok5Vt3QO2TPqgeXG8z8QQSdD5sqId4ZbylYGp8ZpKDAOchU1c9hqW203P4+bwmbAZ6V6ZrS+wsbczfbAQz1Bqp25Z2mcdI9vlNsXRIJ5EijISVRwBg+3gMeHio7J71UMmgE7993yYMqG6sc5jIOnM2AG/P+/rIBDiWeLYmJ7Jfcud/nQH6f4Dh2SFLRBKNwNvy/op/XnLAmnCz57g/+zPw53BYMLZIaddT1DeI2PB1YCEhEisD3uC1Jjj+CKYbEtYIUWhbZQVI/IgO4rtwiwhPAFQ53AMhroHqgMtOvNgk2WwayY5cqF8lJi4im1ynM/9xR9sBVMF+HfhGFAw2K+lGziCREse37DVEHKUeBXGT7D2mef/yMaioz+DVODahqfYMqTDM="
   region: "eu-west-3"  
-  app: "elastic-beanstalk-tutorial"
-  env: "elastic-beanstalk-tutorial-dev"
+  app: "eb-test"
+  env: "eb-test-dev"
   bucket_name: "elasticbeanstalk-eu-west-3-069653090426"
   on:
     branch: master
